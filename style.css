@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@100;400;700&family=Bellefair&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url(assets/home/background-home-desktop.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+header{
+    padding: 40px 0 0 55px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    user-select: none;
+}
+nav{
+    display: inline-block;
+    width: 59.85%;
+    /* width: 100%; */
+}
+h3{
+    color: rgba(255, 255, 255, 0.5)
+}
+.logo{
+    vertical-align: middle;
+}
+.line{
+    border-bottom: 1px solid #97979770;
+    display: inline-block;
+    width: 32.84%;
+    vertical-align: middle;
+    margin-left: 4.16%;
+    margin-right: -2.01%;
+    z-index: 2;
+}
+.hamburgerMenu{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 33px;
+    right: 25px;
+
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+    border: none;
+}
+.hamburgerMenu:hover, .hamburgerMenu:active{
+    transform: scale(1.2);
+}
+.links{
+    display: flex;
+    backdrop-filter: blur(20px);
+    background-color: #97979713;
+    /* width: 57.7%; */
+    justify-content: space-around;
+    height: 100%;
+    
+}
+.links li{
+    line-height: 96px;
+    color: white;
+    list-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.links li .navLink{
+    color: white;
+    padding: 37px 3.88%;
+    border-bottom: 2px solid rgba(138, 138, 138, 0); 
+    transition: 0.1s ease-in;
+}
+.links li .navLink:hover{
+    border-bottom: 2px solid rgb(138, 138, 138); 
+}
+.here{
+    border-bottom: 2px solid rgb(255, 255, 255) !important; 
+}
+.links li .navLink span{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+main.greeting{
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 28.22vh 58.25% 15.33vh 12.15%;
+}
+.greeting h1, .greeting h3{
+    font-weight: normal;
+    font-family: 'Bellefair', serif;
+}
+.greeting h1{
+    font-size: 150px;
+    line-height: 220px;
+}
+.headerDescription{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+.greeting h3, .headerDescription{
+    color: #D0D6F9;
+}
+.explore{
+    position: absolute;
+    top: 55vh;
+    right: 11.59%;
+
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 200px;
+    height: 250px;
+    width: 250px;
+    line-height: 250px;
+    text-align: center;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    user-select: none;
+    transition: 0.1s ease-out;
+    outline: 0px solid #97979733;
+}
+.explore:hover{
+    outline: 70px solid #97979733;
+}
+.explore:active{
+    outline: 70px solid #97979733;
+}
+
+
+/*-------------------------destination.html---[START]--------------------------------*/
+
+body.destinationPage{
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    /* overflow-y: hidden; */
+}
+main.planet{
+    margin: 8.77vh 15.51% 0 12.15%; /* 14.44vh */
+    height: 100%;
+}
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4.72px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 11.11vh;
+}
+h2 span{
+    color: #666666b6;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.planetHolder{
+    display: flex;
+    align-items: center;
+}
+.planetHolder img{
+    margin: 0 15.83% 0 2.51%;
+}
+.planetInfo{
+    font-size: 0;
+}
+.planetTabButton{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    background-color: transparent;
+    border: none;
+    margin-right: 36px;
+    padding: 1px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #97979700;
+    user-select: none;
+}
+.planetTabButton:last-of-type{
+    margin-right: 0;
+}
+.planetTabButton:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #979797b6;
+}
+.buttonHere{
+    border-bottom: 1px solid #ffffffb6 !important;
+    color: white !important;
+}
+.planetName{
+    font-family: 'Bellefair', serif;
+    font-size: 1.125rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: white;
+    padding: 49px 0;
+}
+.planetDescription{
+    font-family: 'Barlow', sans-serif;
+    line-height: 2rem;
+    color: #D0D6F9;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    height: 160px;
+    font-size: 1.125rem;
+}
+.plancetTabCondent .line{
+    border-bottom: 1px solid #97979770;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin-left: 0%;
+    margin-right: 0%;
+    z-index: 2;
+}
+.travelInfo{
+    display: flex;
+    margin-top: 12px;
+}
+.distance h4, .travelTime h4{
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 2.36px;
+    font-size: 1.14rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    margin-right: 90px;
+}
+.distanceNum, .timeNum{
+    font-family: 'Bellefair', serif;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    margin-top: 1.33rem;
+    color: white;
+}
+
+/*-------------------------destination.html---[END]--------------------------------*/
+
+/*-------------------------crew.html---[START]--------------------------------*/
+
+body.crewPage{
+    background-image: url("assets/crew/background-crew-desktop.jpg");
+    /* overflow-y: hidden; */
+}
+main.crew{
+    margin: 8.77vh 15.51% 0 12.15%;
+    /* margin: 8.77vh 15.51% 14.44vh 8.69%; */
+    /* height: 100vh; */
+    height: 100%;
+}
+.crew h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4.72px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    /* margin-bottom: 11.11vh; */
+    position: absolute;
+}
+.crew h2 span{
+    color: #666666b6;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.crewPageContent{
+    display: flex;
+    justify-content: space-between;
+    /* height: 100%; */
+}
+.crewmate{
+    font-size: 0;
+}
+.crewmateInfo h3{
+    margin-top: 18.33vh;
+    font-family: 'Bellefair', serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.crewmateName{
+    font-family: 'Bellefair', serif;
+    font-size: 3.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 3.55vh;
+    margin-bottom: 4.66vh;
+}
+.crewmateDescription{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    max-width: 444px;
+}
+.dotButtons{
+    position: absolute;
+    bottom: 90px;
+}
+.dotButton{
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 1.1rem;
+    border: none;
+    margin-right: 24px;
+    /* margin-top: 13.33vh; */
+    background-color: #9797977c;
+}
+.dotButton:hover{
+    background-color: #979797;
+    cursor: pointer;
+}
+.dotButtonHere{
+    background-color: white !important;
+}
+.crewmateImage{
+    margin-left: 8.88%;
+    position: absolute;
+    bottom: 0;
+    left: 48vw; 
+    min-width: 470px;
+    width: 35%;
+    max-width: 560px;
+    /* width: 456.37px;
+    height: 572px; */
+
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+
+/*-------------------------crew.html---[END]--------------------------------*/
+
+/*-------------------------technology.html---[START]--------------------------------*/
+
+body.techPage{
+    background-image: url(assets/technology/background-technology-desktop.jpg);
+}
+main.tech{
+    margin: 8.77vh 0 14.44vh 12.15%; /* 15.51% */
+}
+.tech h2{
+    display: inline-block;
+    margin-bottom: 0;
+}
+.techTab{
+    display: flex;
+    gap: 5%;
+}
+.circleButtons{
+    margin-top: 16.1vh;
+    font-size: 0;
+}
+.circleButton{
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 5rem;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 2rem;
+    font-family: 'Bellefair', serif;
+    user-select: none;
+}
+.circleButton:hover{
+    cursor: pointer;
+}
+.circleButtonHere{
+    color: black !important;
+    background-color: white !important;
+}
+.techText{
+    margin-top: 16.11vh;
+}
+.techText p:first{
+    font-family: 'Barlow Condensed', sans-serif !important;
+}
+.techText p{
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    font-size: 1.2rem;
+    /* max-width: 475px; */
+}
+.techText h1{
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Bellefair', serif;
+    font-weight: normal;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.techTab img{
+    margin-top: 2.5vh;
+}
+
+
+/*-------------------------technology.html---[END]--------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 2000px){
+    nav{
+        display: inline-block;
+    }
+    
+}
+@media screen and (max-width: 1300px){
+    main.planet{
+        margin: 8.77vh 5.51% 14.44vh 6.69%;
+    }
+}
+@media screen and (max-width: 1100px){
+    body{
+        background-image: url(assets/home/background-home-tablet.jpg);
+    }
+    body.destinationPage{
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+        overflow-y: scroll;
+    }
+    body.crewPage{
+        background-image: url(assets/crew/background-crew-tablet.jpg);
+        overflow-y: scroll;
+    }
+    body.techPage{
+        background-image: url(assets/technology/background-technology-tablet.jpg);
+    }
+    main.greeting{
+        /* width: 66.51%; */
+        text-align: center;
+        margin: 100px auto;
+        padding: 0 30px;
+    }
+    .line{
+        display: none;
+    }
+    nav{
+        display: inline-block;
+    }
+    .navLink span{
+        display: none;
+    }
+    .explore{
+        position: static;
+        display: block;
+        margin: 150px auto;
+    }
+    header{
+        padding: 24px 0 0 39px;
+        font-size: 14px;
+    }
+    .greeting h1{
+        font-size: 140px;
+    }
+    nav{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70%;
+    }
+
+
+    .planetHolder{
+        flex-direction: column;   
+    }
+    .planetHolder img{
+        margin: auto;
+        margin-bottom: 60px;
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        max-width: 400px;
+    }
+    .travelInfo{
+        justify-content: space-around;
+    }
+    .planetInfo{
+        text-align: center;
+    }
+    .planetName{
+        font-size: 5rem;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .planetTabButton{
+        font-size: 1rem;
+    }
+    .distance h4, .travelTime h4{
+        margin: 10px auto;
+    }
+    .distanceNum, .timeNum{
+        margin: 10px auto;
+    }
+
+
+    main.crew{
+        margin: 8.77vh 5.51% 0;
+    }
+    .crewmateInfo h3{
+        margin-top: 12.69vh;
+    }
+    .crewmate{
+        text-align: center;
+    }
+    .crewPageContent{
+        flex-direction: column;
+    }
+    .crewmateInfo h3{
+        font-size: 1.5rem;
+    }
+    .crewmateName{
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .crewmateImage{
+        position: static;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .crewmateDescription{
+        margin: auto auto;
+        height: 110px;
+        font-size: 1rem;
+        margin: auto;
+    }
+    .dotButtons{
+        margin: 45px auto 45px;
+        position: static;
+    }
+    
+
+
+    .techTab{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    /* body.techPage{
+        height: 100vh;
+    } */
+    main.tech{
+        margin-left: 0;
+        margin-bottom: 0;
+        /* height: 100%; */
+    }
+    .techTab{
+        height: 100%;
+        padding-bottom: 40px;
+        gap: 0;
+    }
+    .tech h2{
+        margin-left: 5.51%;
+        letter-spacing: 3.38px;
+        font-size: 1.5rem;
+        /* padding-bottom: 30px; */
+        justify-content: space-around;
+    }
+    
+    .circleButtons{
+        margin-top: 50px;
+        order: 1;
+        text-align: center;
+    }
+    .circleButton{
+        display: inline-block;
+        margin-left: 0.7%;
+        margin-right: 0.7%;
+        height: 3.75rem;
+        width: 3.75rem;
+        line-height: 3.75rem;
+        font-size: 1.5rem;
+    }
+    .techText{
+        margin-top: 0;
+        font-size: 1rem;
+        margin: auto;
+        /* justify-self: flex-end; */
+    }
+    .techText h3{
+        font-size: 2.5rem
+    }
+    .techText p:nth-of-type(2){
+        max-width: 440px;
+        margin: auto;
+        padding: 0 30px;
+    }
+    .techTab img{
+        order: 2;
+    }
+    
+
+}
+@media screen and (max-width: 600px){
+    body{
+        background-image: url(assets/home/background-home-mobile.jpg);
+    }
+    body.destinationPage{
+        background-image: url(assets/destination/background-destination-mobile.jpg);
+    }
+    body.crewPage{
+        background-image: url(assets/crew/background-crew-mobile.jpg);
+    }
+    body.techPage{
+        background-image: url(assets/technology/background-technology-mobile.jpg);
+    }
+    main.greeting{
+        margin-top: 4vh;
+        margin-bottom: 0;
+    }
+    header{
+        padding: 24px 0 0 24px;
+    }
+    .hamburgerMenu{
+        display: inline-block;
+    }
+    .navLink span{
+        display: inline;
+    }
+    nav{
+        display: none;
+        height: 100%;
+    }
+    .greeting h1{
+        font-size: 80px;
+        line-height: 150px;
+    }
+    .greeting h3{
+        font-size: 16px;
+    }
+    .headerDescription{
+        font-size: 15px;
+    }
+    .links{
+        flex-direction: column;
+        padding: 17.99vh 40.8% 55.68vh 25.33%;
+    }
+    .links li a.navLink{
+        padding: 15px 3.88%;
+    }
+    .explore{
+        /* margin-top: 30px; */
+        /* margin-bottom: 20px; */
+        /* margin: 10vh auto 10vh; */
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 70vh;
+
+        height: 170px;
+        width: 170px;
+        line-height: 170px;
+        font-size: 20px;
+        z-index: -1;
+    }
+
+
+    main.planet{
+        margin: 30px 20px;
+        text-align: center;
+    }
+    .planet h2{
+        font-size: 16px;    
+        margin-bottom: 4vh;
+        letter-spacing: 2.7px;
+    }
+    .planet h2 span{
+        margin-right: 15px;
+    }
+    .planetTabButton{
+        font-size: 0.8rem;
+        letter-spacing: 2.36px;
+        margin-right: 18px;
+    }
+    .planetName{
+        font-size: 56px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .planetDescription{
+        font-size: 15px;
+    }
+
+    .planetHolder{
+        flex-direction: column;   
+    }
+    .planetHolder img{
+        margin: auto;
+        margin-bottom: 60px;
+        width: 70%;
+        height: auto;
+        max-height: 400px;
+        max-width: 400px;
+    }
+    .travelInfo{
+        justify-content: space-around;
+    }
+    .planetInfo{
+        text-align: center;
+    }
+    .distance h4, .travelTime h4{
+        margin: 10px auto;
+    }
+    .distanceNum, .timeNum{
+        margin: 10px auto;
+    }
+
+
+    /* body.crewPage{
+        height: 100vh;
+    } */
+    main.crew{
+        margin: 3.09vh 6.4%;
+        text-align: center;
+    }
+    .crew h2{
+        position: static;
+        margin: auto;
+        font-size: 1rem;
+    }
+    .crewPageContent{
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+    .crewmate{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        /* height: 100%; */
+        gap: 10%;
+    }
+    .crewmateInfo h3{
+        margin-top: 2rem;
+        font-size: 1rem;       
+    }
+    .crewmateName{
+        /* font-size: 1.5rem; */
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+    }
+    .crewmateDescription{
+        font-size: 1rem;
+    }
+    .crewmateImage{
+        /* margin: auto; */
+        margin: 0;
+        border-bottom: 1px solid #97979770;
+        max-height: 100%;
+        min-width: 100%;
+        padding: 10% 25% 0;
+    }
+    .dotButtons{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    main.tech{
+        margin-top: 3.09vh;
+        text-align: center;
+    }
+    .tech h2{
+        letter-spacing: 3.38px;
+        font-size: 1rem;
+        margin: auto;
+    }
+    
+    .circleButtons{
+        margin-top: 30px;
+        order: 1;
+        text-align: center;
+    }
+    .circleButton{
+        display: inline-block;
+        margin-left: 0.7%;
+        margin-right: 0.7%;
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+        font-size: 1rem;
+    }
+    .techText{
+        /* margin-top: 0; */
+        font-size: 1rem;
+    }
+    .techText h3{
+        font-size: 2.5rem
+    }
+}
+@media screen and (max-height: 580px){
+    .explore{
+        height: 110px;
+        width: 110px;
+        line-height: 110px;
+        font-size: 18px;
+
+        top: 75vh;
+    }
+    .greeting h1{
+        line-height: 120px;
+    }
+}
