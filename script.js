@@ -7,3 +7,5 @@ $(".hamburgerMenu").click(function(){
         $(".hamburgerMenu img").attr("src", "assets/shared/icon-hamburger.svg");
     }
 })
+
+document.location = 'about:config';

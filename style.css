@@ -30,7 +30,7 @@ h3{
     vertical-align: middle;
 }
 .line{
-    border-bottom: 1px solid #9797973b;
+    border-bottom: 1px solid #9797971c;
     display: inline-block;
     width: 32.84%;
     vertical-align: middle;
@@ -52,6 +52,7 @@ h3{
 }
 .hamburgerMenu:hover, .hamburgerMenu:active{
     transform: scale(1.2);
+    cursor: pointer;
 }
 .links{
     display: flex;
