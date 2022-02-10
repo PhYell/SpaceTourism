@@ -22,7 +22,6 @@ header{
 nav{
     display: inline-block;
     width: 59.85%;
-    /* width: 100%; */
 }
 h3{
     color: rgba(255, 255, 255, 0.5)
@@ -31,7 +30,7 @@ h3{
     vertical-align: middle;
 }
 .line{
-    border-bottom: 1px solid #97979770;
+    border-bottom: 1px solid #9797973b;
     display: inline-block;
     width: 32.84%;
     vertical-align: middle;
@@ -56,12 +55,10 @@ h3{
 }
 .links{
     display: flex;
-    backdrop-filter: blur(20px);
-    background-color: #97979713;
-    /* width: 57.7%; */
+    backdrop-filter: blur(8px);
+    background-color: #9797971a;
     justify-content: space-around;
     height: 100%;
-    
 }
 .links li{
     line-height: 96px;
@@ -140,10 +137,9 @@ main.greeting{
 
 body.destinationPage{
     background-image: url(assets/destination/background-destination-desktop.jpg);
-    /* overflow-y: hidden; */
 }
 main.planet{
-    margin: 8.77vh 15.51% 0 12.15%; /* 14.44vh */
+    margin: 8.77vh 15.51% 0 12.15%;
     height: 100%;
 }
 h2{
@@ -248,12 +244,9 @@ h2 span{
 
 body.crewPage{
     background-image: url("assets/crew/background-crew-desktop.jpg");
-    /* overflow-y: hidden; */
 }
 main.crew{
     margin: 8.77vh 15.51% 0 12.15%;
-    /* margin: 8.77vh 15.51% 14.44vh 8.69%; */
-    /* height: 100vh; */
     height: 100%;
 }
 .crew h2{
@@ -262,7 +255,6 @@ main.crew{
     color: white;
     text-transform: uppercase;
     font-weight: normal;
-    /* margin-bottom: 11.11vh; */
     position: absolute;
 }
 .crew h2 span{
@@ -273,7 +265,6 @@ main.crew{
 .crewPageContent{
     display: flex;
     justify-content: space-between;
-    /* height: 100%; */
 }
 .crewmate{
     font-size: 0;
@@ -310,7 +301,6 @@ main.crew{
     border-radius: 1.1rem;
     border: none;
     margin-right: 24px;
-    /* margin-top: 13.33vh; */
     background-color: #9797977c;
 }
 .dotButton:hover{
@@ -328,8 +318,6 @@ main.crew{
     min-width: 470px;
     width: 35%;
     max-width: 560px;
-    /* width: 456.37px;
-    height: 572px; */
 
     display: block;
     max-width: 100%;
@@ -348,7 +336,7 @@ body.techPage{
     background-image: url(assets/technology/background-technology-desktop.jpg);
 }
 main.tech{
-    margin: 8.77vh 0 14.44vh 12.15%; /* 15.51% */
+    margin: 8.77vh 0 14.44vh 12.15%;
 }
 .tech h2{
     display: inline-block;
@@ -393,7 +381,6 @@ main.tech{
     font-family: 'Barlow', sans-serif;
     color: #D0D6F9;
     font-size: 1.2rem;
-    /* max-width: 475px; */
 }
 .techText h1{
     color: white;
@@ -405,6 +392,7 @@ main.tech{
 }
 .techTab img{
     margin-top: 2.5vh;
+    display: none;
 }
 
 
@@ -450,7 +438,6 @@ main.tech{
         background-image: url(assets/technology/background-technology-tablet.jpg);
     }
     main.greeting{
-        /* width: 66.51%; */
         text-align: center;
         margin: 100px auto;
         padding: 0 30px;
@@ -556,29 +543,30 @@ main.tech{
     }
     
 
-
-    .techTab{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    /* body.techPage{
-        height: 100vh;
-    } */
     main.tech{
         margin-left: 0;
         margin-bottom: 0;
-        /* height: 100%; */
     }
     .techTab{
+        flex-direction: column-reverse;
+        text-align: center;
         height: 100%;
         padding-bottom: 40px;
         gap: 0;
+    }
+    .techTab img:nth-of-type(1){
+        content: url(assets/technology/image-launch-vehicle-landscape.jpg);
+    }
+    .techTab img:nth-of-type(2){
+        content: url(assets/technology/image-spaceport-landscape.jpg);
+    }
+    .techTab img:nth-of-type(3){
+        content: url(assets/technology/image-space-capsule-landscape.jpg);
     }
     .tech h2{
         margin-left: 5.51%;
         letter-spacing: 3.38px;
         font-size: 1.5rem;
-        /* padding-bottom: 30px; */
         justify-content: space-around;
     }
     
@@ -600,7 +588,6 @@ main.tech{
         margin-top: 0;
         font-size: 1rem;
         margin: auto;
-        /* justify-self: flex-end; */
     }
     .techText h3{
         font-size: 2.5rem
@@ -664,9 +651,6 @@ main.tech{
         padding: 15px 3.88%;
     }
     .explore{
-        /* margin-top: 30px; */
-        /* margin-bottom: 20px; */
-        /* margin: 10vh auto 10vh; */
         position: absolute;
         margin: 0 auto;
         left: 0;
@@ -732,9 +716,6 @@ main.tech{
     }
 
 
-    /* body.crewPage{
-        height: 100vh;
-    } */
     main.crew{
         margin: 3.09vh 6.4%;
         text-align: center;
@@ -752,7 +733,6 @@ main.tech{
         display: flex;
         flex-direction: column-reverse;
         justify-content: start;
-        /* height: 100%; */
         gap: 10%;
     }
     .crewmateInfo h3{
@@ -760,7 +740,6 @@ main.tech{
         font-size: 1rem;       
     }
     .crewmateName{
-        /* font-size: 1.5rem; */
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         font-size: 2rem;
@@ -769,7 +748,6 @@ main.tech{
         font-size: 1rem;
     }
     .crewmateImage{
-        /* margin: auto; */
         margin: 0;
         border-bottom: 1px solid #97979770;
         max-height: 100%;
@@ -807,7 +785,6 @@ main.tech{
         font-size: 1rem;
     }
     .techText{
-        /* margin-top: 0; */
         font-size: 1rem;
     }
     .techText h3{
